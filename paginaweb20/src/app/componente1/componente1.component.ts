@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Componente2Component } from '../componente2/componente2.component';
 
 @Component({
@@ -8,18 +8,16 @@ import { Componente2Component } from '../componente2/componente2.component';
   styleUrls: ['./componente1.component.css']
 })
 export class Componente1Component implements OnInit {
-  cualquiera;
-  constructor(
-    private route:ActivatedRoute,
-  ) { }
+  
+  constructor(private routes:Router) { }
 
-  ngOnInit(): void {
-  this.route.paramMap.subscribe(params => {
-      this.cualquiera = Componente2Component [+params.get('NO CE QUE DECIR')] 
-  });
-  }
+ngOnInit(): void {
+ 
+}
 
-
+navegacion(){
+  this.routes.navigate(['web2'])
+}
 
 
 }
