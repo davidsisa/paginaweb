@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { Componente1Component } from './componente1/componente1.component';
@@ -25,6 +25,7 @@ import { RouterModule } from '@angular/router';
   imports: [
     BrowserModule,
     ReactiveFormsModule,
+    AppRoutingModule,
     RouterModule.forRoot([
       { path: '', component:Componente1Component},
       { path: 'Componente1-2', component:Componente2Component}
