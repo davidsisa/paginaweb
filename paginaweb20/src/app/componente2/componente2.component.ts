@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+
 import { ActivatedRoute, Router } from '@angular/router';
 @Component({
   selector: 'app-componente2',
@@ -6,10 +7,13 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./componente2.component.css']
 })
 export class Componente2Component implements OnInit {
+ 
 
-  constructor() { }
+  constructor( private router:Router) { }
 
   ngOnInit(): void {
   }
-
+  navegacion(){
+    this.router.navigate(['web1'])
+  }
 }
