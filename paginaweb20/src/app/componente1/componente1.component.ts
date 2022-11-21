@@ -9,15 +9,17 @@ import { Componente2Component } from '../componente2/componente2.component';
 })
 export class Componente1Component implements OnInit {
   
-  constructor(private routes:Router) { }
+  constructor(private router:Router) { }
 
 ngOnInit(): void {
  
 }
 
 navegacion(){
-  this.routes.navigate(['web2'])
+  this.router.navigate(['web2'])
 }
-
+navegacion1(){
+  this.router.navigate(['web3'])
+}
 
 }
