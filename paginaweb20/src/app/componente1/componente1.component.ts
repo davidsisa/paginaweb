@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { FormsModule} from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Componente2Component } from '../componente2/componente2.component';
 
@@ -11,7 +11,8 @@ import { Componente2Component } from '../componente2/componente2.component';
 export class Componente1Component implements OnInit {
   
   constructor(private router:Router) { }
-
+numero:any;
+arrays=[2,312,34124,124124,23123412,12412245];
 ngOnInit(): void {
  
 }
