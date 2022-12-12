@@ -1,10 +1,10 @@
-<input [(NgModule)]="numero">
-<p *ngIf="numer>2">
+
+<h1> Formulario God</h1>
+Ingresa un numero, se almacenara y se mostrara en la siguiente pagina
+<br><input [(ngModel)]="numero">
+<p *ngIf="numero>2">
 Es mayor o igual a dos
 </p>
-<ul>
-    <li *ngFor="let array of arrays">
-     {{arrays}}
-    </li>
-</ul>
+<button (click)="almacenar()">Guardar Dato</button>
+<button (click)="navegacion()">Pagina2</button>
 

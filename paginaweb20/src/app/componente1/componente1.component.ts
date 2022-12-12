@@ -12,11 +12,13 @@ export class Componente1Component implements OnInit {
   
   constructor(private router:Router) { }
 numero:any;
-arrays=[2,312,34124,124124,23123412,12412245];
-ngOnInit(): void {
- 
-}
 
+ngOnInit(): void {
+
+}
+almacenar(){
+localStorage.setItem('valor_obtenido1',this.numero);
+}
 navegacion(){
   this.router.navigate(['web2'])
 }
