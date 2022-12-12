@@ -11,17 +11,26 @@ import { Componente2Component } from '../componente2/componente2.component';
 export class Componente1Component implements OnInit {
   
   constructor(private router:Router) { }
-numero:any;
-
+nombre:any;
+email: any;
+password:any;
+confirm:any;
+phone:any;
 ngOnInit(): void {
 
 }
 almacenar(){
-localStorage.setItem('valor_obtenido1',this.numero);
+localStorage.setItem('valor_nombre',this.nombre);
+localStorage.setItem('valor_email',this.email);
+localStorage.setItem('valor_password',this.password);
+localStorage.setItem('valor_confirm',this.confirm);
+localStorage.setItem('valor_phone',this.phone);
+
+this.router.navigate(['web2'])
 }
-navegacion(){
-  this.router.navigate(['web2'])
-}
+
+
+
 navegacion1(){
   this.router.navigate(['web3'])
 }

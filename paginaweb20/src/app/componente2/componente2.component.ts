@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, SystemJsNgModuleLoader } from '@angular/core';
 
 import { ActivatedRoute, Router } from '@angular/router';
 @Component({
@@ -10,14 +10,15 @@ export class Componente2Component implements OnInit {
  
 
   constructor( private router:Router) { }
-dato1:any;
+nombre:any;
   ngOnInit(): void {
     
   }
   obtencion1(){
-    this.dato1= localStorage.getItem('valor_obtenido1');
+    this.nombre= localStorage.getItem('valor_nombre');
   }
   navegacion(){
     this.router.navigate(['web1'])
   }
+
 }
