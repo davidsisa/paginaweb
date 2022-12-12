@@ -20,6 +20,7 @@ ngOnInit(): void {
 
 }
 almacenar(){
+
 localStorage.setItem('valor_nombre',this.nombre);
 localStorage.setItem('valor_email',this.email);
 localStorage.setItem('valor_password',this.password);
