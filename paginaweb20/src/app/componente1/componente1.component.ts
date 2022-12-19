@@ -26,7 +26,6 @@ localStorage.setItem('valor_email',this.email);
 localStorage.setItem('valor_password',this.password);
 localStorage.setItem('valor_confirm',this.confirm);
 localStorage.setItem('valor_phone',this.phone);
-
 this.router.navigate(['web2'])
 }
 
